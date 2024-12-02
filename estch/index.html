@@ -1,57 +1,15 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rectángulo con texto</title>
-    <style>
-        :root {
-            --pos-x: 50%; /* Posición horizontal */
-            --pos-y: 50%; /* Posición vertical */
-            --width: 300px; /* Ancho del rectángulo */
-            --height: 150px; /* Alto del rectángulo */
-            --bg-color: lightgray; /* Color de fondo */
-            --border-color: black; /* Color del borde */
-            --border-width: 1px; /* Grosor del borde */
-            --text-color: black; /* Color del texto */
-            --font-size: 32px; /* Tamaño de la fuente */
-        }
-
-        .container {
-            position: relative;
-            width: 100vw;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .rectangle {
-            position: absolute;
-            top: var(--pos-y);
-            left: var(--pos-x);
-            width: var(--width);
-            height: var(--height);
-            background-color: var(--bg-color);
-            border: var(--border-width) solid var(--border-color);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transform: translate(-50%, -50%);
-        }
-
-        .rectangle span {
-            color: var(--text-color);
-            font-size: var(--font-size);
-            font-family: Arial, sans-serif;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <div class="rectangle">
-            <span>中文</span>
-        </div>
+    <div class="rectangle">
+        <span>中文</span>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
